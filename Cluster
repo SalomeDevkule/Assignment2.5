@@ -1,0 +1,16 @@
+ Normally any set of loosely connected or tightly connected computers that work together as a single system is called Cluster. In simple words, a computer cluster used for Hadoop is called Hadoop Cluster. 
+Hadoop cluster is a special type of computational cluster designed for storing and analyzing vast amount of unstructured data in a distributed computing environment. These clusters run on low cost commodity computers. 
+Hadoop clusters are often referred to as "shared nothing" systems because the only thing that is shared between nodes is the network that connects them. 
+Large Hadoop Clusters are arranged in several racks. Network traffic between different nodes in the same rack is much more desirable than network traffic across the racks. 
+Hadoop cluster has 3 components:
+1- Client
+2- Master
+3- Slave
+Client: It is neither master nor slave, rather play a role of loading the data into cluster, submit MapReduce jobs describing how the data should be processed and then retrieve the data to see the response after job completion. 
+Masters:The Masters consists of 3 components NameNode, Secondary Node name and JobTracker. 
+1- NameNode
+2- JobTracker
+3-  Secondary Name Node
+Slaves: Slave nodes are the majority of machines in Hadoop Cluster and are responsible to
+1- Store the data
+2- Process the computation
